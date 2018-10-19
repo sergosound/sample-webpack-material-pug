@@ -1,0 +1,38 @@
+@import "./variables";
+@import "@material/elevation/mdc-elevation";
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Roboto';
+  background-color: $mdc-theme-background;
+  color: $mdc-theme-on-background;
+}
+
+body {
+  margin: 0;
+  padding-top: 0.1px; // Prevent header h1 margin from pushing body down
+  display: flex;
+}
+
+.content {
+  @include mdc-elevation(4);
+  margin: auto;
+  padding: 24px;
+}
+
+.bottombar {
+  text-align: center;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.bottombar a {
+  text-decoration: none;
+  color: $mdc-theme-on-background;
+}
