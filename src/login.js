@@ -1,3 +1,4 @@
+import "./login.scss";
 import {
   MDCRipple
 } from '@material/ripple';

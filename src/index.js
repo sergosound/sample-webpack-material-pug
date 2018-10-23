@@ -1,2 +1,2 @@
-import "./index.scss"; /* load stylesheets */
+import "./_layout.scss";
 import "./login";

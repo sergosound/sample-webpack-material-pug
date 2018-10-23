@@ -1,5 +1,7 @@
-@import "./variables";
+@import "./theme";
 @import "@material/elevation/mdc-elevation";
+@import "@material/typography/mdc-typography";
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 html,
 body {
@@ -8,7 +10,6 @@ body {
   margin: 0;
   font-family: 'Roboto';
   background-color: $mdc-theme-background;
-  color: $mdc-theme-on-background;
 }
 
 body {
@@ -17,10 +18,10 @@ body {
   display: flex;
 }
 
-.content {
+.login {
   @include mdc-elevation(4);
   margin: auto;
-  padding: 24px;
+  padding: 36px;
 }
 
 .bottombar {
@@ -34,5 +35,6 @@ body {
 
 .bottombar a {
   text-decoration: none;
-  color: $mdc-theme-on-background;
+  color: $mdc-theme-on-surface;
+  @include mdc-typography(subtitle1);
 }

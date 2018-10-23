@@ -1,15 +1,15 @@
-
-@import "@material/typography/mdc-typography";
 @import "@material/button/mdc-button";
 @import "@material/textfield/mdc-text-field";
 
 .login-title {
   @include mdc-typography(headline4);
+  color: $mdc-theme-on-surface;
   text-align: center;
 }
 
 .login-subtitle {
   @include mdc-typography(subtitle1);
+  color: $mdc-theme-on-surface;
   text-align: center;
 }
 
