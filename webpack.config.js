@@ -19,25 +19,26 @@ module.exports = {
         }]
       },
       {
-        test: /\.scss$/,
+        test: /\.(scss|css)$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader',
-        { loader:'sass-loader', options: { includePaths: ['./node_modules'] }}
+          {
+            loader: 'sass-loader',
+            options: {
+              includePaths: ['./node_modules']
+            }
+          }
         ]
       },
       {
-        test: /\.(woff|woff2|ttf)$/,
+        test: /\.(woff|woff2|eot|ttf|svg)$/,
         use: {
-          loader: "url-loader",
-          options: {
-            limit: 50000
-          },
-        },
+          loader: "file-loader"
+        }
       }
     ]
   },
   plugins: [
     new HtmlWebPackPlugin({
-
       template: "./src/index.html",
       filename: "./index.html"
     }),

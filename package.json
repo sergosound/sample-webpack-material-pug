@@ -22,7 +22,6 @@
     "node-sass": "^4.9.4",
     "sass-loader": "^7.1.0",
     "style-loader": "^0.23.1",
-    "url-loader": "^1.1.2",
     "webpack": "^4.21.0",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.9"
@@ -31,6 +30,7 @@
     "@material/button": "^0.40.1",
     "@material/elevation": "^0.40.1",
     "@material/textfield": "^0.40.1",
-    "@material/typography": "^0.40.1"
+    "@material/typography": "^0.40.1",
+    "typeface-roboto": "0.0.54"
   }
 }
