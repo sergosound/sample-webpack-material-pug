@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@import "fonts";
+@import "header";
+@import "footer";
+@import "steps";
+@import "profile";
+@import "introduction";
+@import "credentials";
+@import "customing-select";
+@import "individual";
+@import "reviwes";
+@import "payment";
+@import "password-pop";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+body {
+  font-family: "CircularStd";
+
+}
+
+.margin-fixed {
+  margin-top: 5.7143rem;
+  margin-bottom: 5.1429rem;
+}
+.left-bar {
+  padding-top: 4rem;
+}
+.right-bar {
+  padding-top: 4rem;
+  margin-bottom: 2rem;
+}
+.left-padding {
+  padding-left: 1.2857rem;
+}
+.right-padding {
+  padding-right: 1.2857rem;
+}
+.padding-18 {
+  padding: 0 1.2857rem;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+.input-padding-left {
+  padding-left: 5.1429rem;
+}
+
+h1.title1 {
+  color: #292f42;
+  line-height: 1.5;
+  font-weight: 700;
+  font-size: 1.7857rem;
+}
+
+.btn-width {
+  height: 3.4286rem;
+}
+.btn-grey {
+  color: #292f42 !important;
+  opacity: 0.5;
+  background: none;
+  height: auto;
+  padding: 0.8571rem 0;
+  width: 8.4286rem;
+  background-color: none;
+  &:hover {
+    background-color: (#292f42, 0.5) !important;
+  }
+  &:active {
+    background-color: (#292f42, 1) ;
+  }
+}
+
+.mdc-button {
+  height: auto;
+  padding: 0.8571rem 0;
+  width: 8.4286rem;
+  &--raised {
+    background-color: #86be26;
+  }
+}
+.mdc-fab {
+  height: 4rem;
+  width: 4rem;
+}
+.mdc-fab .mdc-fab__icon {
+  width: 1.7143rem;
+  height: 1.7143rem;
+  font-size: 1.7143rem;
+}
+
+.individual-label {
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 1440px) {
+  .search-ind {
+    float: right;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .visa, .visa-next, .input-wrap, .cont-right-add, .certified {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .flex-parent {
+    display: block;
+  }
+  .right-bar {
+    margin-bottom: 36px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .left-bar__cont-width {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .left-padding {
+    padding-right: 18px;
+  }
+  .right-padding {
+    padding-left: 18px;
+  }
+  .search-ind {
+    max-width: 100%;
+  }
+  .margin-32__1024 {
+    margin-top: 2.2857rem;
+  }
+  .inputs-wrap {
+    margin: 0 auto;
+  }
+  .input-right {
+    margin-left: 5.2857rem;
+  }
+
+  .btn-width {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+  .input-wrap, .cont-right-add, .certified {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .step1-logo {
+    max-height: 360px;
+  }
+  .step1__desc {
+    margin-top: 56px;
+  }
+  .input-left, .input-right {
+    max-width: 21.8571rem;
+  }
+  .mdc-btn-mobile {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .btn-add-wrap {
+    height: 3.4286rem;
+  }
+  .input-wrap, .cont-right-add, .certified {
+    max-width: 100%;
+  }
+
+}
+@media screen and (max-width: 575px) {
+  .left-bar__cont-width {
+    margin: 0 0 32px 0;
+  }
+
+  .input-right {
+    margin-left: 2.2857rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .padding-18, .header, .footer, .left-padding, .right-padding {
+    padding: 0;
+  }
+  .step1-logo {
+    max-height: 257px;
+  }
+}

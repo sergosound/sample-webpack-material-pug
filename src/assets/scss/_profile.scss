@@ -1,0 +1,114 @@
+.left-bar {
+  background-color: #f9fafc;
+}
+.left-bar__cont-width {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 2.2857rem;
+}
+
+.add {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 1.7143rem;
+  margin-bottom: 4rem;
+}
+.act {
+  color: #292f42;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 1.7143rem;
+}
+.input-wrap {
+  position: relative;
+  display: block;
+  margin-top: 1.1429rem;
+  max-width: 22.4286rem;
+}
+.input-wrap2 {
+  display: block;
+  margin-top: 1.7143rem;
+}
+.city-check {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  opacity: 0.6;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #292f42;
+}
+.l-name {
+  top: -1.2143rem;
+  position: absolute;
+  margin-left: 1.7143rem;
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #292f42;
+  opacity: 0.6;
+}
+.prof-input {
+  margin-bottom: 1.7143rem;
+  padding: 0 1.7143rem;
+  border: 1px solid #ccc;
+  height: 3.4286rem;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #ffffff;
+  line-height: 1.9rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "CircularStd";
+}
+input, select {
+  outline: none;
+}
+input[placeholder] {
+  text-overflow: ellipsis;
+}
+.prof-input:focus::-webkit-input-placeholder {color: transparent;}
+.prof-input:focus::-moz-placeholder          {color: transparent;}
+.prof-input:focus:-moz-placeholder           {color: transparent;}
+.prof-input:focus:-ms-input-placeholder      {color: transparent;}
+
+.your-lang {
+  width: 11.1429rem;
+  height: 2.2857rem;
+  border-radius: 5px;
+  background-color: #f6f6fc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: #7b7e8c;
+  }
+}
+.lang-close {
+  cursor: pointer;
+  margin-left: 0.5714rem;
+}
+
+// .footer-clone {
+//   height: 72px;
+//   width: 100%;
+//   z-index: 0;
+//   opacity: 0;
+//   pointer-events: none;
+// }
+
+.flex-parent {
+  display: flex;
+  flex-flow: column;
+}
+.flex-content {
+  flex: 1 0 auto;
+}
+.flex-content__mod {
+  flex: 1 0 110%;
+}

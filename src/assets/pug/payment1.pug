@@ -1,0 +1,95 @@
+html(lang="en")
+  head
+    script.
+      var calcFontSize = function () {
+        var dWidth = window.innerWidth;
+        var fontSize;
+        if( dWidth > 1024) {
+          fontSize = dWidth/1440;
+        }
+       else if (window.innerHeight > window.innerWidth) {
+          fontSize = (dWidth/375) * (window.innerWidth/window.innerHeight < 0.72 ? 1 : 0.8);
+        }
+        else {
+          fontSize = dWidth/667 * (window.innerHeight/window.innerWidth < 0.72 ? 1 : 0.8);
+        }
+        document.getElementsByTagName('html')[0].style.fontSize = '' + fontSize + 'rem';
+     };
+     calcFontSize();
+     window.onresize = calcFontSize;
+    title Individual tax return
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="stylesheet" href="plugins/bootstrap/dist/css/bootstrap.css")
+  body
+    .container-fluid.flex-parent
+      include modules/header
+
+      .row.margin-fixed.flex-content
+        .col-xl-4.col-lg-5.col-md-6.col-12.left-bar
+          .left-padding
+            .left-bar__cont-width
+              h1.title
+                | Add a new method to accept payments
+              p.subtitle
+                | All payment info is stored securely
+              .taxreturn-wrap
+                .taxreturn-block.taxreturn-block__active
+                  span Credit card or Debit Card
+                  img(src="img/leftbar-1.svg", alt="")
+                .taxreturn-block
+                  span Checking Accounts
+                  img(src="img/leftbar-2.svg", alt="")
+        .col-xl-6.col-lg-5.col-md-6.col-12.right-bar.offset-md-0.offset-lg-1
+          .right-padding
+            .row
+              .col-xl-6.col-12
+                h3.title3
+                  | Add Credit card or Debit card
+                form(action="#").mt-48
+                  .input-wrap
+                    label.l-name CURD NUMBER
+                    input.prof-input.input-padding-left(type="text"  maxlength="16" required)
+
+                  .inputs-wrap
+                    .input-wrap.input-left
+                      label.l-name EXPIRY DATE
+                      input.prof-input.input-padding-left(type="text" maxlength="5" required)
+                    .input-wrap.input-right
+                      label.l-name CVV
+                      input.prof-input(type="text" maxlength="3" required)
+                  
+                  .input-wrap
+                    label.l-name CURD HOLDER
+                    input.prof-input(type="text" placeholder="..." maxlength="20" required)
+                  .input-wrap.btn-add-wrap
+                    button.mdc-button.mdc-button--raised.mdc-btn-mobile ADD
+              .col-xl-6.col-12
+                h3.title3
+                  | Your Cards
+                .visa
+                  .visa-top
+                    span.top-name VISA
+                    img.top-burger(src="img/burger-white.svg", alt="")
+                  .visa-center
+                    span.center-number **** &nbsp; **** &nbsp; **** &nbsp; 4382
+                  .visa-bottom
+                    .bottom-name
+                      .name-top Card Holder
+                      .name-bottom Dorothy Puscas
+                    .bottom-date
+                      .name-top Expires
+                      .name-bottom 05/19
+                .visa-next
+                  img.elem1(src="visa-logo.svg", alt="")
+                  span.elem2 **** &nbsp; **** &nbsp; **** &nbsp; 4382
+                  img.elem3.top-burger(src="img/burger-black.svg", alt="")
+                
+
+      include modules/footer1
+
+    script(type="text/javascript" src="plugins/jquery/dist/jquery.min.js")
+    script(type="text/javascript" src="plugins/bootstrap/dist/js/bootstrap.min.js") 
+    script(type="text/javascript" src="js/script.js")

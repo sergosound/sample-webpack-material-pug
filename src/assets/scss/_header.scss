@@ -1,0 +1,29 @@
+.header {
+  padding: 0 1.2857rem;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  height: 5.7143rem;
+  background-color: #ffffff;
+  box-shadow: 0 5px 10px 0 rgba(41, 47, 66, 0.05);
+}
+.have-account-link {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #292f42;
+  text-decoration: none;
+  margin-left: 1.2857rem;
+  text-align: right;
+}
+.cont-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo-img {
+  width: 9.2857rem;
+}

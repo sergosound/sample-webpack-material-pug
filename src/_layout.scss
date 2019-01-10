@@ -1,39 +1,4 @@
 @import "./theme";
 @import "@material/elevation/mdc-elevation";
 @import "@material/typography/mdc-typography";
-
-html,
-body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  font-family: 'Roboto';
-  background-color: $mdc-theme-background;
-}
-
-body {
-  margin: 0;
-  padding-top: 0.1px; // Prevent header h1 margin from pushing body down
-  display: flex;
-}
-
-.login {
-  @include mdc-elevation(4);
-  margin: auto;
-  padding: 36px;
-}
-
-.bottombar {
-  text-align: center;
-  overflow: hidden;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding-bottom: 16px;
-}
-
-.bottombar a {
-  text-decoration: none;
-  color: $mdc-theme-on-surface;
-  @include mdc-typography(subtitle1);
-}
+@import "./assets/scss/style";
