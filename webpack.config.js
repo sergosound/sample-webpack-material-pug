@@ -1,13 +1,32 @@
 const path = require('path');
 const webpack = require('webpack');
+const glob = require("glob");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require('autoprefixer');
+const fs = require('file-system');
+let html = [];
+
+fs.recurseSync('./src/assets/pug/', function(filepath, relative, filename) {
+    html.push((filepath.split('\\').pop()).split('.').shift());
+});
+
+
+let multiplesFiles = html.map(function (entryName) {
+    return new HtmlWebPackPlugin({
+        filename: entryName + '.html',
+        template: __dirname + `/src/assets/pug/${entryName}.pug`
+    });
+});
+
+
 
 const pug = {
     test: /\.pug$/,
     use: ['html-loader?attrs=false', 'pug-html-loader']
 };
+
+
 
 module.exports = {
     entry: './src/index.js',
@@ -60,18 +79,11 @@ module.exports = {
         ]
     },
     plugins: [
-        new HtmlWebPackPlugin({
-            template: "./src/index.html",
-            filename: "index.html"
-        }),
+
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
         }),
-        new HtmlWebPackPlugin({
-            filename: 'credentials.html',
-            template: './src/assets/pug/credentials.pug',
-            inject: false
-        })
-    ]
+
+    ].concat(multiplesFiles)
 };
