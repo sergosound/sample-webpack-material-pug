@@ -1,0 +1,16 @@
+<!DOCTYPE js><html lang="en"><head><script>var calcFontSize = function () {
+    var dWidth = window.innerWidth;
+    var fontSize;
+    if (dWidth > 1024) {
+        fontSize = dWidth / 1440;
+    }
+    else if (window.innerHeight > window.innerWidth) {
+        fontSize = (dWidth / 375) * (window.innerWidth / window.innerHeight < 0.72 ? 1 : 0.8);
+    }
+    else {
+        fontSize = dWidth / 667 * (window.innerHeight / window.innerWidth < 0.72 ? 1 : 0.8);
+    }
+    document.getElementsByTagName('html')[0].style.fontSize = '' + fontSize + 'rem';
+};
+calcFontSize();</script><window class="onresize">= calcFontSize;</window><title>Step 1</title><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="ie=edge"/><link rel="stylesheet" href="css/style.css"/><link href="main.css" rel="stylesheet"></head><body><div class="container-fluid flex-parent"><div class="row"><header class="header"><div class="col-12 cont-between"><img class="header-logo-img" src="src/img/logo.svg" alt=""/><a class="have-account-link" href="#">Already have an account?</a></div></header></div><div class="row flex-content"><div class="step1 col-xl-10 offset-xl-1 col-lg-12 offset-lg-0"><div class="row padding-18"><div class="step1__desc col-md-6 col-12 order-md-1 order-2"><div class="step-desc-wrap"><h1 class="title1">Now, it's time to make a great personal profile</h1><p class="subtitle">Customers compare professionals and are looking for an exact match of their needs before
+deciding whom to hire. Make sure your profile stands out.</p><ul class="nav-ul step1_nav"><li class="nav-ul__item step1_item"><a class="item__link item__link_active">1. Make an outstanding profile</a></li><li class="nav-ul__item item step1_item"><a class="item__link link">2. Select what you do best and your service price for that</a></li><li class="nav-ul__item item step1_item"><a class="item__link link">3. Payment details</a></li></ul></div></div><div class="step1__image col-md-6 col-12 order-md-2 order-1"><img class="step1-logo" src="src/img/step1-logo.svg" alt=""/></div></div></div></div></div><script type="text/javascript" src="main.bundle.js"></script></body><div class="row"><footer class="footer"><div class="col-12 cont-right"><div class="btn-block"><a class="text-decoration-none m-right-32" href="#"><button class="mdc-button btn-grey">TEXT</button></a><a class="text-decoration-none" href="#"><button class="mdc-button mdc-button--raised">NEXT<script src="main.bundle.js"></script></button></a></div></div></footer></div></html>

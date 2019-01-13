@@ -5,6 +5,7 @@ const HtmlWebPackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const autoprefixer = require('autoprefixer');
 const fs = require('file-system');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 let html = [];
 
 fs.recurseSync('./src/assets/pug/', function(filepath, relative, filename) {
@@ -79,7 +80,12 @@ module.exports = {
         ]
     },
     plugins: [
-
+        new CopyWebpackPlugin([
+            {
+                from: './src/img',
+                to: './src/img'
+            },
+        ]),
         new MiniCssExtractPlugin({
             filename: "[name].css",
             chunkFilename: "[id].css"
