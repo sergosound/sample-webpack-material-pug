@@ -24,10 +24,8 @@ let multiplesFiles = html.map(function (entryName) {
 
 const pug = {
     test: /\.pug$/,
-    use: ['html-loader?attrs=false', 'pug-html-loader']
+    use: ['html-loader?attrs=false', 'pug-html-loader?{"pretty":true,"exports":false}']
 };
-
-
 
 module.exports = {
     entry: './src/assets/js/main.js',

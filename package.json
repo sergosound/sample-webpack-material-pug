@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --port 3005",
+    "start": "webpack-dev-server --mode development --port 3002",
     "build": "webpack --mode production"
   },
   "keywords": [],
