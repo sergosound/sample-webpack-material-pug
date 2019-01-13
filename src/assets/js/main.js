@@ -1,2 +1,2 @@
-// import 'vendors/jquery/dist/jquery'
-// import 'vendors/bootstrap/dist/js/bootstrap'
+import "../scss/style.scss";
+import "./material";
