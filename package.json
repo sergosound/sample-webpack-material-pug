@@ -30,10 +30,6 @@
     "webpack-dev-server": "^3.1.9"
   },
   "dependencies": {
-    "@material/button": "^0.40.1",
-    "@material/elevation": "^0.40.1",
-    "@material/textfield": "^0.40.1",
-    "@material/typography": "^0.40.1",
     "bootstrap": "^4.2.1",
     "copy-webpack-plugin": "^4.6.0",
     "file-system": "^2.2.2",
